@@ -1,0 +1,194 @@
+:root {
+  /* Light Mode */
+  --bg-primary: #f9fafb;
+  --bg-secondary: #ffffff;
+  --bg-hover: #f3f4f6;
+  --bg-table-primary: #f3f4f6;
+  --bg-table-secondary: #fdfdfd;
+  --border: #e5e7eb;
+  --text-primary: #1f2937;
+  --text-secondary: #4b5563;
+  --text-tertiary: #9ca3af;
+
+  /* Green Shades */
+  --green-50: #f0fdf4;
+  --green-100: #dcfce7;
+  --green-200: #bbf7d0;
+  --green-300: #68f263;
+  --green-400: #4ade80; /* Gradient start */
+  --green-500: #22c55e; /* Primary */
+  --green-800: #166534; /* Dark mode text */
+  --green-900: #14532d; /* Dark badges */
+
+  --bg-green: #bbf7d0;
+  --border-green: #a7f3d0;
+  /* --bg-green: #68f263; */
+
+  /* Emerald Shades */
+  --emerald-100: #d1fae5;
+  --emerald-200: #a7f3d0;
+  --emerald-500: #10b981; /* Secondary primary */
+  --emerald-800: #065f46;
+  --emerald-900: #064e3b;
+
+  /* Teal */
+  --teal-500: #14b8a6;
+
+  /* Lime */
+  --lime-500: #84cc16;
+
+  /* gray */
+  --gray-1: #111113;
+  --gray-2: #19191b;
+  --gray-3: #222325;
+  --gray-4: #292a2e;
+  --gray-5: #303136;
+  --gray-6: #393a40;
+  --gray-7: #46484f;
+  --gray-8: #5f606a;
+  --gray-9: #6c6e79;
+  --gray-10: #797b86;
+  --gray-11: #b2b3bd;
+  --gray-12: #eeeef0;
+
+  /* Shadow System - Soft to Strong */
+  /* XS - Extra Soft (barely visible, subtle depth) */
+  --shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  /* SM - Soft (gentle elevation) */
+  --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 1);
+  /* MD - Medium (clear elevation, good for cards) */
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  /* LG - Large (prominent elevation) */
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  /* XL - Extra Large (floating effect) */
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  /* 2XL - Double Extra Large (dramatic depth) */
+  --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+
+  /* Special shadow card */
+  /* blue card */
+  --shadow-blue: 0 10px 30px rgba(102, 173, 255, 0.3),
+    0 5px 15px rgba(102, 173, 255, 0.2), 0 2px 5px rgba(102, 173, 255, 0.1);
+  /* hover effect */
+  --shadow-blue-hover: 0 20px 50px rgba(102, 173, 255, 0.4),
+    0 10px 25px rgba(102, 173, 255, 0.3), 0 5px 10px rgba(102, 173, 255, 0.2),
+    0 0 40px rgba(102, 173, 255, 0.3);
+
+  /* Green Card */
+  --shadow-green: 0 10px 30px rgba(46, 216, 182, 0.3),
+    0 5px 15px rgba(46, 216, 182, 0.2), 0 2px 5px rgba(46, 216, 182, 0.1);
+  /* hover effect */
+  --shadow-green-hover: 0 20px 50px rgba(46, 216, 182, 0.4),
+    0 10px 25px rgba(46, 216, 182, 0.3), 0 5px 10px rgba(46, 216, 182, 0.2),
+    0 0 40px rgba(46, 216, 182, 0.3);
+
+  /* Orange card */
+  --shadow-orange: 0 10px 30px rgba(255, 133, 51, 0.3),
+    0 5px 15px rgba(255, 133, 51, 0.2), 0 2px 5px rgba(255, 133, 51, 0.1);
+  /* hover effect */
+  --shadow-orange-hover: 0 20px 50px rgba(255, 133, 51, 0.4),
+    0 10px 25px rgba(255, 133, 51, 0.3), 0 5px 10px rgba(255, 133, 51, 0.2),
+    0 0 40px rgba(255, 133, 51, 0.3);
+
+  /* Spacing Scale (4px Multiplier) */
+  --size-0: 0;
+  --size-4: 0.25rem; /* 4px */
+  --size-8: 0.5rem; /* 8px */
+  --size-12: 0.75rem; /* 12px */
+  --size-16: 1rem; /* 16px */
+  --size-20: 1.25rem; /* 20px */
+  --size-24: 1.5rem; /* 24px */
+  --size-28: 1.75rem; /* 28px */
+  --size-32: 2rem; /* 32px */
+  --size-36: 2.25rem; /* 36px */
+  --size-40: 2.5rem; /* 40px */
+  --size-44: 2.75rem; /* 44px */
+  --size-48: 3rem; /* 48px */
+  --size-56: 3.5rem; /* 56px */
+  --size-64: 4rem; /* 64px */
+  --size-80: 5rem; /* 80px */
+  --size-100: 6.25rem; /* 100px */
+}
+
+/* Dark Mode */
+[data-theme="dark"] {
+  --bg-primary: #111827;
+  --bg-secondary: #1f2937;
+  --bg-green: #9ca3af;
+  --bg-hover: #374151;
+  --bg-table-primary: #111827;
+  --bg-table-secondary: #1f2937;
+  --border: #374151;
+  --border-green: #374151;
+  --text-primary: #ffffff;
+  --text-secondary: #d1d5db;
+  --text-tertiary: #9ca3af;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font: inherit;
+}
+
+html {
+  font-family: var(--font-poppins);
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-primary);
+}
+
+section {
+  padding: var(--size-16) var(--size-12);
+}
+
+h1,
+h2,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  line-height: var(--lh-normal);
+  font-weight: var(--fw-regular);
+  margin: 0;
+}
+
+img,
+svg,
+iframe {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+input,
+label {
+  display: block;
+}

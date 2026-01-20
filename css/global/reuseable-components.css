@@ -1,0 +1,224 @@
+/* Image in menu dasboard and menu biodata  */
+#dashboard img,
+#biodata img {
+  width: calc(var(--size-100) * 2);
+  border-radius: 50%;
+  margin: 0 auto;
+  box-shadow: var(--shadow-sm);
+}
+/* =============================== */
+/* style card: for every contaier  */
+/* =============================== */
+/* profile-card container and announcement-container*/
+.card-indentity,
+.announcement-container,
+.detail-biodata {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--size-8);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+}
+
+/* student profile: card indentity */
+.card-indentity {
+  text-align: center;
+  width: 100%;
+  padding: var(--size-40) var(--size-16);
+  background-color: var(--bg-secondary);
+}
+/* style for card-profile(biodata) || krs & khs */
+.identity-detail {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-16);
+  margin-block: var(--size-32);
+}
+
+.identity-detail h5 {
+  font-size: var(--fz-h4);
+  color: var(--text-primary);
+  font-weight: var(--fw-bold);
+}
+
+.identity-detail .id-primary {
+  color: var(--text-secondary);
+  font-weight: var(--fw-medium);
+}
+
+.identity-detail .status {
+  width: 80%;
+  margin: 0 auto;
+  padding-block: var(--size-8);
+  margin-top: var(--size-16);
+  background-color: var(--green-300);
+  border-radius: var(--size-40);
+  color: var(--emerald-900);
+  font-weight: var(--fw-bold);
+}
+
+/* prestasi akademi<dashboard> & total sks<prestasi kumulatif>*/
+.card--blue::before {
+  background-image: linear-gradient(to left, #b3d6ff, #66adff);
+  box-shadow: var(--shadow-blue);
+}
+.card--blue:hover::before {
+  box-shadow: var(--shadow-blue-hover);
+}
+
+/* total sks<dashboard> & IPK tertinggi<prestasi kumulatif>*/
+.card--orange::before {
+  background-image: linear-gradient(to left, #fecba1, #ffb64d);
+  box-shadow: var(--shadow-orange);
+}
+.card--orange:hover::before {
+  box-shadow: var(--shadow-orange-hover);
+}
+
+/* Matkul Aktif<dashboard> & semester terbaik <prestasi kumulatif>*/
+.card--green::before {
+  background-image: linear-gradient(to left, #82e8d3, #2ed8b6);
+  box-shadow: var(--shadow-green);
+}
+.card--green:hover::before {
+  box-shadow: var(--shadow-green-hover);
+}
+
+/* Header: Biodata, Kartu Rencana Studi, Kartu Hasil Studi, Indeks Prestasi Kumulatif */
+.krs-container,
+.khs-container,
+.maintenance-container {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--size-8);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+}
+/* style: background-color and font-color */
+.biodata-header,
+.krs-header,
+.khs-header,
+.ipk-header {
+  padding: var(--size-12) var(--size-16);
+  background-image: linear-gradient(
+    to right,
+    var(--green-400),
+    var(--teal-500)
+  );
+  color: #fff;
+}
+
+/* indentity-detial in krs & khs */
+.menu-krs .student-identity,
+.menu-khs .student-identity {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  padding-inline: var(--size-16);
+}
+
+.menu-krs .student-identity p,
+.menu-khs .student-identity p {
+  font-weight: var(--fw-semibold);
+  color: var(--text-primary);
+}
+
+.menu-krs .student-identity span,
+.menu-khs .student-identity span {
+  font-weight: var(--fw-medium);
+  color: var(--text-tertiary);
+}
+
+.tabel-relative {
+  position: relative;
+  margin-top: var(--size-40);
+  padding-bottom: var(--size-32);
+}
+
+.tabel-container {
+  width: 100%;
+  padding: var(--size-16);
+  border: none;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border: none;
+  white-space: nowrap;
+  border-collapse: collapse;
+  border-radius: var(--size-8);
+  overflow: hidden;
+}
+
+thead {
+  background-image: linear-gradient(
+    to right,
+    var(--green-400),
+    var(--teal-500)
+  );
+  color: #fff;
+}
+
+thead th {
+  padding: var(--size-12);
+  text-align: center;
+  font-weight: var(--fw-semibold);
+  text-transform: uppercase;
+  font-size: var(--fz-base);
+  letter-spacing: var(--ls-wide);
+  white-space: nowrap;
+}
+
+th,
+td {
+  padding: var(--size-12);
+}
+
+/* odd line lighter */
+tbody tr:nth-child(odd) {
+  background-color: var(--bg-table-primary);
+}
+
+/* even line - darker */
+tbody tr:nth-child(even) {
+  background-color: var(--bg-table-secoandary);
+}
+
+tbody td {
+  padding: 16px;
+  color: var(--text-primary);
+}
+
+/* view in desktop: indentity in krs & khs */
+@media (min-width: 48rem) {
+  /* few data on krs */
+  .student-identity .identity-detail {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+
+  /* header in desktop */
+  thead th {
+    padding: var(--size-16);
+    font-weight: var(--fw-semibold);
+    text-transform: uppercase;
+    font-size: var(--fz-base);
+    letter-spacing: var(--ls-wide);
+    white-space: nowrap;
+  }
+}
+
+@media screen and (max-width: 48rem) {
+  /* Tampilkan scroll hint */
+  .tabel-relative::after {
+    content: "← Geser untuk melihat lebih banyak →";
+    display: block;
+    text-align: center;
+    padding: 15px;
+    color: #9ca3af;
+    font-size: 12px;
+    font-style: italic;
+  }
+}

@@ -1,0 +1,18 @@
+/* Global Styles */
+@import url("./global/boilerplate.css");
+@import url("./global/fonts.css");
+@import url("./global/main-layout.css");
+@import url("./global/icons.css");
+@import url("./global/reuseable-components.css");
+
+/* Pages */
+@import url("./pages/login.css");
+
+/* Components */
+@import url("./components/header.css");
+@import url("./components/sidebar.css");
+@import url("./components/dashboard-content.css");
+@import url("./components/biodata-content.css");
+@import url("./components/krs-content.css");
+@import url("./components/prestasi-kumulatif.css");
+@import url("./components/setting.css");

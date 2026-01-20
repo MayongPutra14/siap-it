@@ -1,0 +1,167 @@
+.material-symbols-rounded {
+  font-size: 24px; /* Standar ukuran ikon */
+  vertical-align: middle; /* Supaya sejajar dengan teks di sampingnya */
+  line-height: 1px;
+}
+
+/* header: menu toogle & theme toggle  */
+.material-symbols-rounded.menu-toggle,
+.material-symbols-rounded.theme-toggle {
+  cursor: pointer;
+  /* font-size: var(--size-32); */
+  font-size: clamp(var(--size-8), 5vw, var(--size-32));
+  background-color: var(--bg-secondary);
+  padding: var(--size-4);
+  border: 1px solid var(--border);
+  border-radius: var(--size-8);
+  box-shadow: var(--shadow-md);
+  transition: background-color 0.3s ease, trasnform .3s ease;
+}
+
+/* menu toggle icon */
+.material-symbols-rounded.menu-toggle {
+  color: var(--text-primary);
+}
+
+/* header: default state light mode moon icon is active */
+.material-symbols-rounded.moon-icon {
+  color: var(--emerald-500);
+}
+/* header: default state dark mode sun-icon is inactive */
+.material-symbols-rounded.sun-icon {
+  color: #FBBF24;
+}
+
+.material-symbols-rounded.menu-toggle:hover,
+.material-symbols-rounded.theme-toggle:hover {
+  background-color: var(--bg-hover);
+}
+
+.material-symbols-rounded.menu-toggle:active,
+.material-symbols-rounded.theme-toggle:active {
+  transition: transform 0.1s ease;
+}
+
+/* Sidebar<state>: icon and teks in sidebar before clicked */
+.material-symbols-rounded.sidebar-icn {
+  font-variation-settings: "FILL" 1, "wght" 700, "GRAD" 0, "opsz" 48;
+  color: var(--text-tertiary);
+  margin-right: var(--size-16);
+  font-size: calc(var(--size-32) - 6px);
+}
+
+/* Sidebar<state>: change color to white when menu is clicked */
+.sidebar-menu ul li a.selected .material-symbols-rounded.sidebar-icn {
+  color: #fff;
+}
+
+/* Sidebar<state>: logout icon */
+.material-symbols-rounded.logout {
+  color: red;
+}
+
+/* close button X */
+.sidebar-header .close-btn{
+  font-size: var(--size-40);
+  border-radius: var(--size-4);
+  cursor: pointer;
+  color: red;
+}
+/* menu dashboard : announcement notification icon */
+.announcement-header .notif-icon {
+  font-variation-settings: "FILL" 0, "wght" 700, "GRAD" 0, "opsz" 48;
+  font-size: var(--size-32);
+}
+
+/* menu dashboard: statistic card icon */
+.card-statistics .statistic-icn {
+  font-variation-settings: "FILL" 0, "wght" 700, "GRAD" 0, "opsz" 48;
+  font-size: var(--size-32);
+}
+
+/* menu biodata: style icon*/
+.biodata-item .biodata-icons {
+  color: #fff;
+  background-color: var(--green-500);
+  padding: var(--size-8);
+  border-radius: var(--size-16);
+  font-size: var(--fz-h4);
+  box-shadow: var(--shadow-md);
+}
+
+/* Menu biodata: blue reminder card */
+.exclamation-icon {
+  font-variation-settings: "FILL" 0, "wght" 700, "GRAD" 0, "opsz" 48;
+  padding: var(--size-4);
+  background-color: #1d4ed8;
+  border-radius: var(--size-56);
+}
+
+/* printer-icon: krs,khs,ipk */
+.material-symbols-rounded.printer-icon {
+  position: absolute;
+  top: calc(var(--size-56) * -1);
+  right: var(--size-16);
+  padding: var(--size-12) var(--size-16);
+  font-variation-settings: "FILL" 0, "wght" 700, "GRAD" 0, "opsz" 48;
+  font-size: var(--fz-h4);
+  color: #fff;
+  background-color: #2563eb;
+  box-shadow: var(--shadow-md);
+  border-radius: var(--size-8);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.material-symbols-rounded.printer-icon::after {
+  display: block;
+  text-align: center;
+  padding-top: 2px;
+  content: "Cetak";
+  font-size: 5px;
+}
+
+.material-symbols-rounded.printer-icon:hover {
+  background-color: #1d4ed8;
+}
+
+.material-symbols-rounded.printer-icon:active {
+  transform: scale(0.97);
+  transition: transform 0.1s ease;
+}
+
+/* status icon KRS: Approved and date */
+.material-symbols-rounded.status-icon {
+  font-variation-settings: "FILL" 0, "wght" 700, "GRAD" 0, "opsz" 48;
+  font-size: var(--fz-base);
+  color: var(--green-500);
+  background-color: var(--green-100);
+  border-radius: 50%;
+  padding: var(--size-8);
+}
+
+/* chekc icon on prestasi kumulatif : .card-main-ipk */
+.material-symbols-rounded.check-rate-icon {
+  font-variation-settings: "FILL" 0, "wght" 700, "GRAD" 0, "opsz" 48;
+  font-size: var(--fz-xs);
+  padding: var(--size-4);
+  margin-right: var(--size-8);
+  color: #fff;
+  background-color: var(--green-500);
+  border-radius: var(--size-56);
+}
+
+/* menu prestasi kumulatif : icons of detail-card  */
+.material-symbols-rounded.card-detail-icon {
+  font-variation-settings: "FILL" 0, "wght" 700, "GRAD" 0, "opsz" 48;
+  margin-right: var(--size-8);
+}
+
+.material-symbols-rounded.maintenance-icon {
+  font-size: var(--fz-h1);
+  padding: var(--size-16);
+  color: red;
+  background-color: var(--bg-secondary);
+  border-radius: 50%;
+  box-shadow: var(--shadow-md);
+}
